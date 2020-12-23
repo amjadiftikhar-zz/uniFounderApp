@@ -1,9 +1,12 @@
 import React from 'react';
+import HeroComponent from '../hero/HeroComponent';
+import Partners from '../partners/Partners';
 
 function HomePage() {
     return (
         <div>
-            <h1>Home Page</h1>
+            <HeroComponent/>
+            <Partners/>
         </div>
     )
 }

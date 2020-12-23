@@ -1,13 +1,13 @@
 import {makeStyles} from "@material-ui/core";
 
-export const useStyles = makeStyles(() => ({
+export const useStyles = makeStyles(() => ({    
     footerSection: {
         width: '100%',
         display: 'flex',
         alignItems:'flex-start',
         justifyContent: 'space-around'
     },
-    homepageFooter:{
+    homepageFooter: {
         width: '100%',
         padding:25,
         marginTop:'calc(5% + 60px)',
@@ -28,7 +28,11 @@ export const useStyles = makeStyles(() => ({
         flexDirection:"column",
         alignItems:"flex-start"
     },
+    footerLeftVector: {
+        position: 'relative'
+    },
     address:{
+        // position: 'absolute',
         display: 'flex',
         flexDirection: 'column',
         alignItems:'center',
@@ -36,7 +40,7 @@ export const useStyles = makeStyles(() => ({
         width: '14em',
         '& img':{          
             marginBottom:'10px',
-            height:30,
+            height:25,
             width:199,
         },
         '& p':{
@@ -58,6 +62,12 @@ export const useStyles = makeStyles(() => ({
     },
     linkHeaders: {
         color: '#FF785B!important'
+    },
+    footerNavigation: {
+        marginTop: '4em',
+        borderTop: "0.73px solid #E8E7E8",
+        width: "100%",
+        padding: "1em"
     }
 }));
 

@@ -6,7 +6,7 @@ export const useStyles = makeStyles(() => ({
         flexDirection:'column'
     },
     upperSection: {
-        padding:'2px',
+        padding:'1.8px',
         background:"#0E0E31",
         color: 'white',
         fontSize: '0.6rem'
@@ -40,7 +40,7 @@ export const useStyles = makeStyles(() => ({
         width: '40%'
     },
     navItem: {
-        // minWidth:50
+        minWidth:50
     },
     userLabel: {
         borderRadius: '50%',
