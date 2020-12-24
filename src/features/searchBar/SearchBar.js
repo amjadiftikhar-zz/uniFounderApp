@@ -24,13 +24,13 @@ function SearchBar() {
             </Grid>
         <Paper component="form" className={classes.root}>
             <div className={classes.searchWrapper}>
-            <IconButton className={classes.iconButton} aria-label="search">
-                <SearchIcon />
-            </IconButton>
-            <InputBase
-                className={classes.input}
-                placeholder="What skills are you seeking?"
-            />
+                <IconButton className={classes.iconButton} aria-label="search">
+                    <SearchIcon />
+                </IconButton>
+                <InputBase
+                    className={classes.input}
+                    placeholder="What skills are you seeking?"
+                />
             </div>
             <Divider className={classes.divider} />
             <div className={classes.locationWrapper}>

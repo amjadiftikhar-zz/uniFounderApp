@@ -6,63 +6,32 @@ export const useStyles = makeStyles((theme) => ({
       display: 'flex',
       alignItems: 'center',
       width: '100%',
-      borderRadius:"0",
-      // [theme.breakpoints.between("sm", "md")]: {
-      //   width:700
-      // },
-      // [theme.breakpoints.only("xs")]: {
-      //   flexDirection:"column",
-      //   width:343
-      // },
-
     }, 
     buttonContainer: {
-        // border: '2px solid black',
         display: 'flex',
     },
     searchWrapper:{
       width:360,
-      // [theme.breakpoints.only("xs")]: {
-      //   display:"flex",
-      //   width:345
-      // },
     },
     locationWrapper:{
         borderLeft: '0.83px solid #DDDBE4',
         width:360,
-      //   [theme.breakpoints.only("xs")]: {
-      //   display:"flex",
-      //   width:345
-      // },
     },
     input: {
       marginLeft: theme.spacing(1),
       flex: 1,
-      // border: '2px solid yellow',
       width: 185,
       fontSize: 12,
       padding: 3,
     },
     iconButton: {
-      // border: '2px solid red',
-      // padding: 10.
       padding: 3,      
     },
     divider: {
       height: 32,
       margin: 4,
-      // [theme.breakpoints.only("xs")]: {
-      //   width:"97%",
-      //   height:1
-
-      // },
     },
     btnWrapper:{
-      // [theme.breakpoints.only("xs")]: {
-
-        // width:"100%"
-
-      // },
     },
     buttons:{
       backgroundColor:"white",
@@ -75,14 +44,10 @@ export const useStyles = makeStyles((theme) => ({
     button: {
       margin: theme.spacing(1),
       backgroundColor:"#3936C4",
-      // fontSize:'16px',
       fontSize: '12px',
       fontFamily: 'poppins',
       color:"white",
       borderRadius: '5px',
-      // [theme.breakpoints.only("xs")]: {
-      //   padding:"10px 100px"
-      // },
     },
   })
 );

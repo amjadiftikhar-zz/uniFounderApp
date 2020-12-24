@@ -10,7 +10,7 @@ export default function Job(props) {
                 {props.jobTitle}
             </Typography>
             <img className={classes.designationImage} 
-                src={props.designationImage} alt=""
+                src={props.designationImage} alt="designation image"
             />
         </Grid>
     )

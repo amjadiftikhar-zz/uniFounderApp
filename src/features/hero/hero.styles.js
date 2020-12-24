@@ -8,9 +8,7 @@ export const useStyles = makeStyles(() => ({
         justifyContent: 'space-between',
     },
     middleContainer: {
-        // width: '40em',
         width: '35em',
-        // border: "2px solid red",
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'baseline'
@@ -50,6 +48,17 @@ export const useStyles = makeStyles(() => ({
         borderRadius:' 15px',
         font: '#3936C4',
         margin: '5px'
+    },
+    leftContainer: {
+        width: '18em',
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+    },
+    rightContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems:'flex-end'
     }
 }))
 
