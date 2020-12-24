@@ -29,7 +29,7 @@ function SearchBar() {
             </IconButton>
             <InputBase
                 className={classes.input}
-                placeholder="Company name"
+                placeholder="What skills are you seeking?"
             />
             </div>
             <Divider className={classes.divider} />
@@ -39,7 +39,7 @@ function SearchBar() {
                 </IconButton>
                 <InputBase
                     className={classes.input}
-                    placeholder="City, state or zip"
+                    placeholder="City"
                 />
             </div>
             <div className={classes.btnWrapper}>

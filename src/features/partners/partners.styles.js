@@ -6,7 +6,7 @@ export const useStyles = makeStyles(() => ({
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'space-around',
-        marginTop: '197px',
+        marginTop: '100px',
         padding: '2em',
         background: '#3835C2',
         color: 'white'
