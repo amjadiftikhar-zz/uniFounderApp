@@ -4,6 +4,7 @@ import Partners from '../partners/Partners';
 import JobList from "../jobs/JobsList";
 import StartupList from '../startups/StartupList';
 import UserList from "../users/UserList";
+import HeroPexel from '../subHero/HeroPexel';
 
 function HomePage() {
     return (
@@ -13,6 +14,7 @@ function HomePage() {
             <JobList/>
             <UserList/>
             <StartupList/>
+            <HeroPexel/>
         </div>
     )
 }
