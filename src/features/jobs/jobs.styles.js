@@ -32,7 +32,7 @@ export const useStyles = makeStyles(() => ({
         lineHeight:'0.7rem',
         fontFamily: 'poppins',
         color: '#242F65',
-        paddingLeft: 30,
+        paddingLeft: 20,
     },
     jobsContainer: {
         width:'60%',
