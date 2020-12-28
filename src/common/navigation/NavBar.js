@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Tab, Button} from "@material-ui/core";
-import { BrowserRouter as Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import NavStandardLogo from '../../assets/Unifounder_logo.png';
 import {useStyles} from "./navBar.styles";
 
@@ -23,27 +23,29 @@ function NavBar() {
                     <Tab className={classes.navItem} component={Link} 
                         to="startUpProfile" label="Find Startups" />
                     <Tab className={classes.navItem} component={Link}  
-                        to="/" label="See posts" />
-                    {/* <Tab className={classes.navItem} component={Link} 
+                        to="/posts" label="See posts" />
+                    <Tab className={classes.navItem} component={Link} 
                         style={{borderLeft: '1px solid #cccccc'}}
-                        to="startUpProfile" label="Sign in" />
+                        to="/startUpProfile" label="Sign in" />
                     <Tab className={classes.navItem} component={Link}  
-                        to="/" label="Sign up" /> */}
-                    <Button
-                        className={classes.buttons}
-                        variant="contained"
-                        color="default"
-                        style={{borderLeft: '1px solid #cccccc'}}
-                    >
-                        Login
-                    </Button>
-                    <Button
-                        className={classes.buttons}
-                        variant="contained"
-                        color="default"
-                        style={{padding:"2px", marginRight:"25px"}}                    > 
-                        Sign Up
-                    </Button>
+                        to="/signup" label="Sign up" />
+                    {/* <Grid className={classes.navButtons}>
+                        <Button
+                            className={classes.buttons}
+                            variant="contained"
+                            color="default"
+                            style={{borderLeft: '1px solid #cccccc'}}
+                        >
+                            Login
+                        </Button>
+                        <Button
+                            className={classes.buttons}
+                            variant="contained"
+                            color="default"
+                            style={{padding:"2px", marginRight:"25px"}}                    > 
+                            Sign Up
+                        </Button>
+                    </Grid> */}
                 </Grid>
             </Grid >
         </Grid >
