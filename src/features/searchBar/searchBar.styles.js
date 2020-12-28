@@ -18,7 +18,7 @@ export const useStyles = makeStyles((theme) => ({
         width:360,
     },
     input: {
-      marginLeft: theme.spacing(1),
+      // marginLeft: theme.spacing(1),
       flex: 1,
       width: 185,
       fontSize: 12,
@@ -42,7 +42,7 @@ export const useStyles = makeStyles((theme) => ({
       color: '#261D56',
     },
     button: {
-      margin: theme.spacing(1),
+      // margin: theme.spacing(1),
       backgroundColor:"#3936C4",
       fontSize: '12px',
       fontFamily: 'poppins',
