@@ -1,6 +1,7 @@
 import React from 'react';
-import {Grid, Typography, Button, Paper, IconButton, InputBase} from "@material-ui/core";
+import {Grid, Typography, Tab, Button, Paper, IconButton, InputBase} from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import adobeImage from "../../assets/images/adobe.png";
 import dropBox from "../../assets/images/dropbox.png";
 import airbnb from "../../assets/images/airbnb.png";
@@ -23,6 +24,10 @@ export default function Posts() {
     const classes = useStyles();
     return (
         <Grid className={classes.postMainSection}>
+            <Grid className={classes.inviteSection}>
+                <span className={classes.inviteDescription}>Boost your profile visibility by inviting your friends to Unifounder!</span>
+                <button className={classes.inviteBtn}>Invite</button>
+            </Grid>
             <Grid className={classes.postSearchSection}>
                 <Grid className={classes.postHeaderSection}>
                     <Typography className={classes.postHeader}>
@@ -57,23 +62,34 @@ export default function Posts() {
                 <Grid className={classes.postCategorytSection}>
                     <PostCategory/>
                 </Grid>
-                <Grid className={classes.postListSection}>
-                    {postsObj.map((post, index) => {
-                        return(
-                            <PostCard
-                                key = {index}
-                                startupImage = {post.startupImage}
-                                profileTitle = {post.profileTitle}
-                                startupTitle = {post.startupTitle}
-                                businessType = {post.businessType}
-                                location = {post.location}
-                                clockImage = {post.clockImage}
-                                timeStamp = {post.timeStamp}
-                                jobCategory = {post.jobCategory}
-                                userType = {post.userType}
-                            />
-                        )
-                    })}
+                <Grid className={classes.postsRightSection}>
+                    <Grid className={classes.tabSection}>
+                        <span className={classes.tabElement}>Showing 600 filtered posts</span>
+                        <span className={classes.tabElement}>Seeking a co-founder?
+                            <a className={classes.tabLinks} href="">Create Your Own Post!</a>
+                        </span>
+                        <span className={`${classes.tabElement}, ${classes.tabElementExpand}`}>Sort By,
+                            <a className={classes.tabLinks} href="">Most Recent</a><ExpandMoreIcon/>
+                        </span>
+                    </Grid>
+                    <Grid className={classes.postListSection}>
+                        {postsObj.map((post, index) => {
+                            return(
+                                <PostCard
+                                    key = {index}
+                                    startupImage = {post.startupImage}
+                                    profileTitle = {post.profileTitle}
+                                    startupTitle = {post.startupTitle}
+                                    businessType = {post.businessType}
+                                    location = {post.location}
+                                    clockImage = {post.clockImage}
+                                    timeStamp = {post.timeStamp}
+                                    jobCategory = {post.jobCategory}
+                                    userType = {post.userType}
+                                />
+                            )
+                        })}
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

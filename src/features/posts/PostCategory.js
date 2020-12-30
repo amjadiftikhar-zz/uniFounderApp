@@ -1,11 +1,13 @@
 import React from 'react';
 import {Grid, Typography} from "@material-ui/core";
 import {useStyles, CustomCheckbox} from "./posts.styles";
+import Radius from './Radius';
 
 function PostCategory() {
     const classes = useStyles();
     return (
         <Grid className={classes.PostCategoryCard}>
+            <Radius/>
             <Grid className={classes.typeOfBusiness}>
                 <Typography className={classes.categoryTitle} variant="h4">Field</Typography>
                 <Typography className={classes.element}> 
