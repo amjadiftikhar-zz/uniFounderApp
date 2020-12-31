@@ -11,7 +11,7 @@ const skillsObj = ['App Development', 'HTML & CSS', 'Javascript']
 export default function User(props) {
     const classes = useStyles();
     return (
-        <Grid className={classes.cardContainer}>
+        <Grid className={classes.userCardContainer}>
             <Grid className={classes.headSection}>
                 <Grid className={classes.imageSection}>
                     <img className={classes.profileImage} 

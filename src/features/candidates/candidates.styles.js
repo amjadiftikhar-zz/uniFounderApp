@@ -2,10 +2,10 @@ import {makeStyles} from "@material-ui/core/styles";
 
 export const useStyles = makeStyles(() => ({
     cardContainer: {
-        marginTop: '1.5em',
+        marginTop: '0.5em',
         width: '10em',
     },
-    jobTitle: {
+    candidateTitle: {
         position: 'absolute',
         zIndex: 1,
         padding:'1em',
@@ -17,7 +17,7 @@ export const useStyles = makeStyles(() => ({
         height: '100%',
         borderRadius: '10px'
     },
-    jobSection: {
+    candidateSection: {
         marginTop: '100px',
         display: 'flex',
         flexDirection: 'column',
@@ -34,7 +34,7 @@ export const useStyles = makeStyles(() => ({
         color: '#242F65',
         paddingLeft: 20,
     },
-    jobsContainer: {
+    candidatesContainer: {
         width:'60%',
         display: 'flex',
         alignItems: 'center',

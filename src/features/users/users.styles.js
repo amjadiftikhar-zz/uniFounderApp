@@ -1,12 +1,12 @@
 import {makeStyles} from "@material-ui/core/styles";
 
 export const useStyles = makeStyles(() => ({
-    cardContainer: {
+    userCardContainer: {
         background: '#FFFFFF',
         display: 'flex',
         flexDirection: 'column',
         marginTop: '1em',
-        width: '13em',
+        width: '12em',
         padding: '0.8em',
         boxshadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
         borderRadius: '11px',
@@ -116,14 +116,15 @@ export const useStyles = makeStyles(() => ({
             fontSize: '16px',
         }       
     },
-    totalUserContainer: {
+    totalUserCard: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: '2em',
+        marginTop: '1em',
         background: '#F1F4FD',
-        width: '15em',
+        width: '12em',        
+        padding: '0.8em',
         borderRadius: '0px 0px 50px 0px',
     },
     button: {

@@ -57,8 +57,8 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     width: '500px',
-    height: '40px',
-    borderRadius: '10px',
+    height: '48px',
+    borderRadius: '8px',
   },
   input: {
     fontSize: 16,

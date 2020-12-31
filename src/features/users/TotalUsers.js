@@ -5,7 +5,7 @@ import {useStyles} from "./users.styles";
 export default function TotalUsers(props) {
     const classes = useStyles();
     return (
-        <Grid className={classes.totalUserContainer}>            
+        <Grid className={classes.totalUserCard}>            
             <Typography className={classes.totalUserTitle}>
                 <h1> {props.totalUsers}</h1>               
             </Typography>

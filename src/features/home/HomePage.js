@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroComponent from '../hero/HeroComponent';
 import Partners from '../partners/Partners';
-import JobList from "../jobs/JobsList";
+import CandidatesList from "../candidates/CandidatesList";
 import StartupList from '../startups/StartupList';
 import UserList from "../users/UserList";
 import HeroPexel from '../subHero/HeroPexel';
@@ -11,7 +11,7 @@ function HomePage() {
         <div>
             <HeroComponent/>
             <Partners/>
-            <JobList/>
+            <CandidatesList/>
             <UserList/>
             <StartupList/>
             <HeroPexel/>
