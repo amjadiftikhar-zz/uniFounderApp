@@ -205,6 +205,11 @@ export const useStyles = makeStyles((theme) => ({
     background: 'white',
     marginBottom: '1em'
   },
+  // startup links to specific post in the card
+  startupPostLink: {
+    textDecoration: 'none',
+    color: '#0E0E31',
+  },
   // image section in the card
   imageSection: {
     width: 85,

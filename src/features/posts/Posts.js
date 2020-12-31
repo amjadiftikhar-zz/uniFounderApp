@@ -1,5 +1,6 @@
-import React from 'react';
-import {Grid, Typography, Tab, Button, Paper, IconButton, InputBase} from "@material-ui/core";
+import React, {useState} from 'react';
+import {Grid, Typography, Tab, Button, Paper, IconButton, InputBase} 
+from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import adobeImage from "../../assets/images/adobe.png";
@@ -9,6 +10,7 @@ import mercedes from "../../assets/images/mercedes.png";
 import {useStyles} from "./posts.styles";
 import PostCard from './PostCard';
 import PostCategory from './PostCategory';
+import SpecificPost from './SpecificPost';
 
 const postsObj = [ { startupTitle:'Adobe', profileTitle:'Manager', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
     { startupTitle:'Mercedes', profileTitle:'Head of the third party strategy deal', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech', timeStamp: '3 days ago' , jobCategory: 'Full time', userType: 'partner' }, 
@@ -20,12 +22,27 @@ const postsObj = [ { startupTitle:'Adobe', profileTitle:'Manager', startupImage:
     { startupTitle:'Mercedes', profileTitle:'Designer', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }
 ]
 
-export default function Posts() {
+export default function Posts({toggleToPosts}) {
+
+    // console.log("toggle props: ", toggleSpecificPost)
+
     const classes = useStyles();
+
+    const [toggleSpecificPost, setToggleSpecificPost] = useState(false)
+
+    function toggleToPosts(e){
+        e.preventDefault()
+        setToggleSpecificPost(toggleSpecificPost => !toggleSpecificPost)
+    }
+    
     return (
+        <>
+        {toggleSpecificPost ? <SpecificPost/> :
         <Grid className={classes.postMainSection}>
             <Grid className={classes.inviteSection}>
-                <span className={classes.inviteDescription}>Boost your profile visibility by inviting your friends to Unifounder!</span>
+                <span className={classes.inviteDescription}> 
+                Boost your profile visibility by inviting your friends 
+                to Unifounder!</span>
                 <button className={classes.inviteBtn}>Invite</button>
             </Grid>
             <Grid className={classes.postSearchSection}>
@@ -39,7 +56,9 @@ export default function Posts() {
                 </Grid>
                 <Paper component="form" className={classes.postSearch}>
                     <div className={classes.searchWrapper}>
-                        <IconButton className={classes.iconButton} aria-label="search">
+                        <IconButton className={classes.iconButton} 
+                            aria-label="search"
+                        >
                             <SearchIcon />
                         </IconButton>
                         <InputBase
@@ -76,6 +95,7 @@ export default function Posts() {
                         {postsObj.map((post, index) => {
                             return(
                                 <PostCard
+                                    toggleToPosts = {toggleToPosts}
                                     key = {index}
                                     startupImage = {post.startupImage}
                                     profileTitle = {post.profileTitle}
@@ -93,5 +113,7 @@ export default function Posts() {
                 </Grid>
             </Grid>
         </Grid>
+        }
+        </>
     )
 }

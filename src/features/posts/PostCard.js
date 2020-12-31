@@ -6,20 +6,28 @@ import savedProfile from "../../assets/images/savedProfile.png";
 import clockImage from "../../assets/images/clockImage.png";
 import userType from "../../assets/images/userType.png";
 import {useStyles} from "./posts.styles";
+import Posts from './Posts';
 
 export default function PostCard(props) {
     const classes = useStyles();
+
     return (
         <Grid className={classes.postCardContainer}>
             <Grid className={classes.imageSection}>
-                <img className={classes.startupImage} 
-                    src={props.startupImage} alt="startup image"
-                />
+                <a href="" onClick={props.toggleToPosts} 
+                    className={classes.startupPostLink}>
+                    <img className={classes.startupImage} 
+                        src={props.startupImage} alt="startup image"
+                    />
+                </a>
             </Grid>
             <Grid className={classes.postDetailSection}>
                 <Grid className={classes.titleSection}>
                     <Typography className={classes.profileTitle}>
-                        {props.profileTitle}
+                        <a href="" onClick={props.toggleToPosts} 
+                            className={classes.startupPostLink}>
+                            {props.profileTitle}
+                        </a>
                     </Typography>
                     <Typography className={classes.startupTitle}>
                         {props.startupTitle}
@@ -27,19 +35,23 @@ export default function PostCard(props) {
                 </Grid>
                 <Grid className={classes.detailsSection}>
                     <Typography className={classes.detailType}>
-                        <img className={classes.typeImage} src={business} alt=""/>
+                        <img className={classes.typeImage} src={business} 
+                            alt=""/>
                         {props.businessType}
                     </Typography>
                     <Typography className={classes.detailType}>
-                        <img className={classes.typeImage} src={location} alt="location"/>
+                        <img className={classes.typeImage} src={location} 
+                            alt="location"/>
                         {props.location}
                     </Typography>
                     <Typography className={classes.detailType}>
-                        <img className={classes.typeImage} src={clockImage} alt="location"/>
+                        <img className={classes.typeImage} src={clockImage} 
+                            alt="location"/>
                         {props.jobCategory}
                     </Typography> 
                     <Typography className={classes.detailType}>
-                        <img className={classes.typeImage} src={userType} alt="location"/>
+                        <img className={classes.typeImage} src={userType} 
+                            alt="location"/>
                         {props.userType}
                     </Typography> 
                 </Grid>               
@@ -49,7 +61,8 @@ export default function PostCard(props) {
                    <span className={classes.timeStamp}>{props.timeStamp}</span>
                 </Typography>
                 <Typography>
-                    <img className={classes.savedProfile} src={savedProfile} alt="saved icon"/>
+                    <img className={classes.savedProfile} src={savedProfile} 
+                        alt="saved icon"/>
                 </Typography>
             </Grid> 
         </Grid>
