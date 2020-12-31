@@ -31,7 +31,7 @@ export default function Startup(props) {
             </Grid>    
             <Grid >
                 <Typography className={classes.description}>
-                    <p>Adobe Inc. is an American multinational computer software company. Incorporated in Delaware and headquartered in San Jose...</p>
+                    <p>{props.description}</p>
                 </Typography>
             </Grid> 
             <Grid className={classes.postSection}>

@@ -2,23 +2,24 @@ import React from 'react';
 import {Grid, Typography, IconButton} from "@material-ui/core";
 import ChevronRight from "@material-ui/icons/ChevronRight";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-import adobeImage from "../../assets/images/adobe.png";
-import dropBox from "../../assets/images/dropbox.png";
-import airbnb from "../../assets/images/airbnb.png";
-import mercedes from "../../assets/images/mercedes.png";
+// import adobeImage from "../../assets/images/adobe.png";
+// import dropBox from "../../assets/images/dropbox.png";
+// import airbnb from "../../assets/images/airbnb.png";
+// import mercedes from "../../assets/images/mercedes.png";
 import Startup from "./Starup";
 import TotalStartups from "./TotalStartups";
 import {useStyles} from "./startups.styles";
+import {startupsObj} from "./startup.obj"
 
-const startupsObj = [ { startupTitle:'Adobe', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech' }, 
-    { startupTitle:'Mercedes', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech' }, 
-    { startupTitle:'Drop Box', startupImage: dropBox, location: 'Stockholm, SE', businessType: 'Tech' }, 
-    { startupTitle:'Adobe', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech' }, 
-    { startupTitle:'Airbnb', startupImage: airbnb, location: 'Stockholm, SE', businessType: 'Tech' }, 
-    { startupTitle:'Drop Box', startupImage: dropBox, location: 'Copenhagen, Dk', businessType: 'Tech' }, 
-    { startupTitle:'Adobe', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech' }, 
-    { startupTitle:'Mercedes', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech' }
-]
+// const startupsObj = [ { startupTitle:'Adobe', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech' }, 
+//     { startupTitle:'Mercedes', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech' }, 
+//     { startupTitle:'Drop Box', startupImage: dropBox, location: 'Stockholm, SE', businessType: 'Tech' }, 
+//     { startupTitle:'Adobe', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech' }, 
+//     { startupTitle:'Airbnb', startupImage: airbnb, location: 'Stockholm, SE', businessType: 'Tech' }, 
+//     { startupTitle:'Drop Box', startupImage: dropBox, location: 'Copenhagen, Dk', businessType: 'Tech' }, 
+//     { startupTitle:'Adobe', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech' }, 
+//     { startupTitle:'Mercedes', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech' }
+// ]
 
 function StartupList() {
     const classes = useStyles();
@@ -48,6 +49,7 @@ function StartupList() {
                             startupImage={s.startupImage}
                             location={s.location}
                             businessType={s.businessType}
+                            description={s.description}
                         />
                     )
                 })
