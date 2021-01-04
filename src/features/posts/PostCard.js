@@ -6,7 +6,7 @@ import savedProfile from "../../assets/images/savedProfile.png";
 import clockImage from "../../assets/images/clockImage.png";
 import userType from "../../assets/images/userType.png";
 import {useStyles} from "./posts.styles";
-import Posts from './Posts';
+// import Posts from './Posts';
 
 export default function PostCard(props) {
     const classes = useStyles();

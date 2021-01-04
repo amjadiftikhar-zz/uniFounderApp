@@ -3,28 +3,13 @@ import {Grid, Typography, Tab, Button, Paper, IconButton, InputBase}
 from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import adobeImage from "../../assets/images/adobe.png";
-import dropBox from "../../assets/images/dropbox.png";
-import airbnb from "../../assets/images/airbnb.png";
-import mercedes from "../../assets/images/mercedes.png";
+import {postsObj} from "./posts.obj";
 import {useStyles} from "./posts.styles";
 import PostCard from './PostCard';
 import PostCategory from './PostCategory';
-import SpecificPost from './SpecificPost';
-
-const postsObj = [ { startupTitle:'Adobe', profileTitle:'Manager', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Mercedes', profileTitle:'Head of the third party strategy deal', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech', timeStamp: '3 days ago' , jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Drop Box', profileTitle:'Sale Engineer', startupImage: dropBox, location: 'Stockholm, SE', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Adobe', profileTitle:'Brand Marketing Manager', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Airbnb', profileTitle: 'Software Developer', startupImage: airbnb, location: 'Stockholm, SE', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Drop Box', profileTitle:'Manager', startupImage: dropBox, location: 'Copenhagen, Dk', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Adobe', profileTitle:'Marketing Manager', startupImage: adobeImage, location: 'Stockholm, SE', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }, 
-    { startupTitle:'Mercedes', profileTitle:'Designer', startupImage: mercedes, location: 'Copenhagen, Dk', businessType: 'Tech', timeStamp: '3 days ago', jobCategory: 'Full time', userType: 'partner' }
-]
+import SpecificPost from './specificPost/SpecificPost';
 
 export default function Posts({toggleToPosts}) {
-
-    // console.log("toggle props: ", toggleSpecificPost)
 
     const classes = useStyles();
 

@@ -203,7 +203,8 @@ export const useStyles = makeStyles((theme) => ({
     height: 130,
     borderRadius: '10px',
     background: 'white',
-    marginBottom: '1em'
+    marginBottom: '1em',
+    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.08)',
   },
   // startup links to specific post in the card
   startupPostLink: {
