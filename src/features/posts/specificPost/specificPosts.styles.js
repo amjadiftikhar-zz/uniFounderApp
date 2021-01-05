@@ -113,6 +113,11 @@ export const useStyles = makeStyles(() => ({
     padding: '1em',
   },
   // suggested post section styles 
+  relevantPostSection: {
+    display: 'fex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
   suggestedPostContainer: {
     width: '15em',
     boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.1)',
@@ -121,6 +126,7 @@ export const useStyles = makeStyles(() => ({
     padding: '0.5em',
     marginBottom: '1em',
   },
+  // suggested post card styles 
   suggestedPostCard: {
     display: 'flex',
     alignItems: 'flex-start',
@@ -144,6 +150,48 @@ export const useStyles = makeStyles(() => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginTop: '0.5em',
+  },
+  suggestedQueryTitle: {
+    textAlign: 'left',
+    background: '#F1F4FD',
+    height: '3em',
+    paddingRight: '4em',
+    padding: '1em',
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 600,
+    fontSize: '20px',
+    lineHeight: '30px',
+    color: '#242F65',
+  },
+  // styles, border between two sections
+  borderSection: {
+    width: '251px',
+    height: '0px',
+    left: '1123px',
+    top: '1299px',
+    border: '1px solid #D8D8D8',
+    marginTop: '2em',
+    marginBottom: '2em',
+  },
+  suggestedInfoSection: {
+    paddingTop: '1em',
+    paddingBottom: '1em'
+  },
+  suggestedQueryInfo: {
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontSize: '12px',
+    lineHeight: '15px',
+    color: '#6E727E',
+    marginBottom: '1em',
+  },
+  suggestedQuerySection: {
+    textAlign: 'left',
+  },
+  searchBtn: {
+    width: '100%',
   },  
   // startup links to specific post in the card
   startupPostLink: {
