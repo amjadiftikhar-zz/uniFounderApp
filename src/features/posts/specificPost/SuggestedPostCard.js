@@ -5,7 +5,6 @@ import location from "../../../assets/images/location.png";
 import savedProfile from "../../../assets/images/savedProfile.png";
 import clockImage from "../../../assets/images/clockImage.png";
 import userType from "../../../assets/images/userType.png";
-// import fav from "../../../assets/images/fav.png";
 import {useStyles} from "./specificPosts.styles";
 
 export default function SuggestedPostCard(props) {
