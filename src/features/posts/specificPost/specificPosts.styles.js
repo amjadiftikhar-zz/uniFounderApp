@@ -16,11 +16,6 @@ export const useStyles = makeStyles(() => ({
     background: '#FFFFFF',
     padding: '1em',
   },
-  specificPostCardContainer: {
-    marginBottom: '1em',
-    display: 'flex',
-    flexDirection: 'column'
-  },
   postUpperSection: {
     display: 'flex',
     justifyContent: 'space-between'
@@ -38,11 +33,16 @@ export const useStyles = makeStyles(() => ({
   }, 
   detailsSection: {
     marginTop: '2em',
+    padding: '0.5em',
     height: 30,
     background: '#F8F8FA',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'space-between',
     borderRadius: 9,
+  },
+  detailTypeGroup: {
+    display: 'flex',
   },
   //specific post description section styles
   specificPostDescription: {
@@ -57,10 +57,45 @@ export const useStyles = makeStyles(() => ({
     textAlign: 'left',
     padding: '1em',
   },
+  teamMemberContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '10em',
+  },
+  memberProfileImage: {
+    height: 70,
+    width: 70,
+  }, 
+  memberTitle: {
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: '24px',
+    textAlign: 'center',      
+    color: '#0E0E31',
+  }, 
+  jobTitle: {
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontSize: '14px',
+    lineHeight: '24px',
+    textAlign: 'center',      
+    color: '#0E0E31',
+  },
+  teamProfiles: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
   startupDescriptionSection: {
     padding: '1em',
     display: 'flex',
     justifyContent: 'space-between',
+    background: '#F1F4FD',
+    borderRadius: 10,
   },
   startupDetailSection: {
     textAlign: 'left',
