@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Grid, Typography, Button} from "@material-ui/core";
 import business from "../../../assets/images/business.png";
 import location from "../../../assets/images/location.png";
@@ -11,10 +11,23 @@ import SepcificPostCard from "./SpecificPostCard";
 import {memberObj} from "./team.obj";
 import {useStyles} from "./specificPosts.styles";
 import TeamMember from './TeamMember';
+import DialogComponent from '../dialog/DialogComponent';
 
 function SpecificPostDetails() {
 
     const classes = useStyles();
+
+    const [open, setOpen] = useState(false);
+    const [anyValue, setAnyValue] = useState('');
+
+    const clickToOpenDialog = () => {
+        setOpen(true)
+    }
+
+    const handleClose = (value) => {
+        setOpen(false)
+        setAnyValue(value)
+    }
 
     return (
         <div>
@@ -74,7 +87,13 @@ function SpecificPostDetails() {
                     </Typography> 
                 </Typography> 
                 <Typography className={classes.detailType}>
-                    <Button color='primary' variant="contained">Apply</Button>
+                    <Button color='primary' variant="contained"
+                        onClick={clickToOpenDialog}
+                    >
+                        Apply
+                    </Button>
+                    <DialogComponent anyValue={anyValue} open={open} 
+                        onClose={handleClose} />
                 </Typography> 
             </Grid>               
             <Grid className={classes.specificPostDescription}>
