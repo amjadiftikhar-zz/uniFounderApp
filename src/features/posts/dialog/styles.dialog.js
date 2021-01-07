@@ -15,7 +15,7 @@ const StyledButton = withStyles({
         textTransform: "none",
         margin: "5px 0",
         '&:hover': {
-            background: 'orange',
+            background: '#0073B0',
         },
     },
 
@@ -83,12 +83,11 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'space-between',
     },
     iconClass: {
-        width: 22,
-        height: 22,
-        fontSize: 14,
-        fontWeight: 400,
+        width: 16,
+        height: 16,
+        fontWeight: 300,
         alignSelf: 'center',
-        marginRight: '1em',
+        marginRight: '0.8em',
     },
     // socialButtons: {
     //     display: 'flex',

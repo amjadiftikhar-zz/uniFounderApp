@@ -1,8 +1,14 @@
 import React from 'react';
 import {Dialog, Grid, Typography, IconButton} from "@material-ui/core";
+import { FaFacebookF } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaGoogle } from 'react-icons/fa';
+
+
 // import LinkedInIcon from "@material-ui/icons/LinkedIn";
-// import FacebookIcon from "@material-ui/icons/Facebook";
+import FacebookIcon from "@material-ui/icons/Facebook";
 // import GmailIcon from "@material-ui/icons/Gmail";
+
 import linkedin from "../../../assets/images/linkedin1.png";
 import facebook from "../../../assets/images/facebook.png";
 import {useStyles, StyledButton} from "./styles.dialog";
@@ -29,18 +35,18 @@ function DialogComponent(props) {
                     </Typography>           
                 </Grid>
                 <Grid className={classes.buttonSection}>                    
-                    <StyledButton style={{width:'100%'}}>
-                        <img className={classes.iconClass} src={linkedin} alt=""/>
+                    <StyledButton style={{width:'100%'}} >
+                        <FaLinkedinIn className={classes.iconClass}/>
                         Log in with LinkedIn 
                     </StyledButton>                    
                     <Typography className={classes.smallButtons}>
                         <StyledButton style={{width:'48%', background:"#EB4336"}}>
+                            <FaGoogle className={classes.iconClass} /> 
                             Gmail
                         </StyledButton>
                         <StyledButton style={{width:'48%', background:"#3B579C"}}>
-                            <img className={classes.iconClass} 
-                                src={facebook} alt=""/> 
-                                Facebook
+                            <FaFacebookF className={classes.iconClass} /> 
+                            Facebook
                         </StyledButton>
                     </Typography>
                    
