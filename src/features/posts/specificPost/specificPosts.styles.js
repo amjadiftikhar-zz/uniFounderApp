@@ -234,6 +234,9 @@ export const useStyles = makeStyles(() => ({
     fontSize: 14,
     marginRight: 10,
   },
+  applyBtn: {
+    textTransform: 'none',
+  },
   // saved profile section in the card
   timeStamp: {
     fontSize: 14,
