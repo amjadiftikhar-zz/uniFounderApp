@@ -11,21 +11,22 @@ import SepcificPostCard from "./SpecificPostCard";
 import {memberObj} from "./team.obj";
 import {useStyles} from "./specificPosts.styles";
 import TeamMember from './TeamMember';
-import DialogComponent from '../dialog/DialogComponent';
+import VerificationBox from '../dialog/VerificationBox';
 
 function SpecificPostDetails() {
 
     const classes = useStyles();
 
-    const [open, setOpen] = useState(false);
+
+    const [open, setOpenVerification] = useState(false);
     const [anyValue, setAnyValue] = useState('');
 
-    const clickToOpenDialog = () => {
-        setOpen(true)
+    const clickToOpenVerification = () => {
+        setOpenVerification(true)
     }
 
-    const handleClose = (value) => {
-        setOpen(false)
+    const handleCloseVerification = (value) => {
+        setOpenVerification(false)
         setAnyValue(value)
     }
 
@@ -87,13 +88,15 @@ function SpecificPostDetails() {
                     </Typography> 
                 </Typography> 
                 <Typography className={classes.detailType}>
-                    <Button color='primary' variant="contained"
-                        onClick={clickToOpenDialog}
+                    <Button color='primary' variant="contained" 
+                        className={classes.applyBtn}
+                        onClick={clickToOpenVerification}
                     >
                         Apply
                     </Button>
-                    <DialogComponent anyValue={anyValue} open={open} 
-                        onClose={handleClose} />
+                    <VerificationBox anyValue={anyValue} 
+                        open={open} 
+                        onClose={handleCloseVerification} />
                 </Typography> 
             </Grid>               
             <Grid className={classes.specificPostDescription}>
