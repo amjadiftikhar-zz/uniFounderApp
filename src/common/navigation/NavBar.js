@@ -21,7 +21,7 @@ function NavBar() {
                     <Tab className={classes.navItem} component={Link}  
                         to="/" label="Find Co-founder" /> 
                     <Tab className={classes.navItem} component={Link} 
-                        to="startUpProfile" label="Find Startups" />
+                        to="startUpsPage" label="Find Startups" />
                     <Tab className={classes.navItem} component={Link}  
                         to="/posts" label="See posts" />
                     <Tab className={classes.navItem} component={Link} 
