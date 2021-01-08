@@ -17,14 +17,15 @@ function SpecificPostDetails() {
 
     const classes = useStyles();
 
-
     const [open, setOpenVerification] = useState(false);
     const [anyValue, setAnyValue] = useState('');
 
+    //onclick opens verification window
     const clickToOpenVerification = () => {
         setOpenVerification(true)
     }
 
+    //onclick closes verification window
     const handleCloseVerification = (value) => {
         setOpenVerification(false)
         setAnyValue(value)
