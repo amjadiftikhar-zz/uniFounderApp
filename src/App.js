@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./common/navigation/NavBar";
 import HomePage from "./features/home/HomePage";
 import Posts from "./features/posts/Posts";
+import StartUpsPage from "./features/startups/startupPage/StartUpsPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Footer from "./common/footer/Footer";
@@ -13,6 +14,7 @@ function App() {
       <NavBar/>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/startUpsPage" component={StartUpsPage} />
           <Route exact path="/posts" component={Posts} />
         </Switch>
       </Router>
