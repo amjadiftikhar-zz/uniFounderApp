@@ -9,6 +9,7 @@ function VerificationBox(props) {
     const classes = useStyles();
     const {onClose,anyValue, open} = props;
 
+    //onclick closes verification window
     const handleCloseVerification = () => {
         onClose(anyValue)
     }
@@ -17,10 +18,12 @@ function VerificationBox(props) {
     const [openDialog, setOpenDialog] = useState(false);
     const [value, setValue] = useState('');
 
+    //onclick opens dialog window including form and login options
     const handleOpenDialog = () => {
         setOpenDialog(true)
     }
 
+    //onclick closes dialog window including form and login options
     const handleCloseDialog = (value) => {
         setOpenDialog(false);
         setValue(value)
@@ -30,9 +33,12 @@ function VerificationBox(props) {
     const [openConfirmation, setOpenConfirmation] = useState(false);
     const [v, setV] = useState('');
 
+    //onclick opens confirmation window asking if one is loggedin
     const handleOpenConfirmation = () => {
         setOpenConfirmation(true)
     }
+
+    //onclick closes confirmation window
     const handleCloseConfirmation = (val) => {
         setOpenConfirmation(false)
         setV(val)

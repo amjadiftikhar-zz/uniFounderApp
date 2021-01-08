@@ -18,6 +18,7 @@ function DialogComponent(props) {
     const classes = useStyles();
     const {onClose, value, openDialog} = props;
 
+    //onclick closes dialogbox window including form etc
     const handleCloseDialog = () => {
         onClose(value)
     }    
