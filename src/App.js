@@ -8,8 +8,7 @@ import Footer from "./common/footer/Footer";
 
 function App() {
   return (
-    <div className="app">
-      
+    <div className="app">      
       <Router>
       <NavBar/>
         <Switch>
