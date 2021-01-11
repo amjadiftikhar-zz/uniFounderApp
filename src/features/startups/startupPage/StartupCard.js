@@ -15,9 +15,11 @@ export default function StartupCard(props) {
             <Grid className={classes.headSection}>
                 <Grid className={classes.imageSection}>
                     <Typography className={classes.imageContainer}>
+                    <a href="" onClick={props.toggleToStartup}>
                         <img className={classes.startupImage} 
                             src={props.startupImage} alt="startup image"
                         />
+                    </a>    
                     </Typography>
                     <Typography className={classes.startupTitle}>
                         {props.startupTitle}

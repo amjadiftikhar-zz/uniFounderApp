@@ -162,6 +162,7 @@ export const useStyles = makeStyles((theme) => ({
     width: '30px',
     borderRadius: '50%',
     background: '#F1F4FD',
+    cursor: 'pointer',
   },
   // startup card container styles
   startupCardContainer: {
