@@ -3,15 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 export const CustomCheckbox = withStyles({
   root: {
-    //   background: "white",
-    //   borderRadius: 3,
-    //   border: 0,
-      // color: COLORS.orange,
-    //   height: 38,
-    //   padding: '0 10px',
-    //   fontWeight: "bold",
-  textTransform: "none",
-    //   margin: "20px 0",
+    textTransform: "none",
     '&:checkbox': {
       background: "blue",
       color: "#fff"
@@ -22,7 +14,7 @@ export const CustomCheckbox = withStyles({
 export const useStyles = makeStyles((theme) => ({
   // main startup section/page to display all startups
   startupMainSection: {
-    background: '#F2F2F2',
+    background: '#FFFFFF',
     position: 'relative',
   },
   startupSearchSection: {
@@ -47,13 +39,6 @@ export const useStyles = makeStyles((theme) => ({
     fontStyle: 'normal'
   },
   //startup description head section
-  startupDescription: {
-    // border: '2px solid red',
-    // fontStyle: 'normal',
-    // fontWeight: 'normal',
-    // fontSize: '14px',
-    // lineHeight: '26px'
-  },
   startupSearch: {
     display: 'flex',
     alignItems: 'center',
@@ -114,15 +99,8 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
     margin: '2em 4em 2em 4em'
   },
-  //search for a city section style
-  citySearchWrapper: {
-    // border: '2px solid #E5E4EB',
-    // height: 45,
-    // marginTop: '1em',
-  },
   //styles for the tab elements in the right section
   tabElement: {
-    // border:'2px solid red',
     fontSize: 12,
     fontWeight: 500,
   },
@@ -138,27 +116,8 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: 12,
     fontWeight: 500,
   },
-  input: {
-    // width: '12em',
-    // fontSize: 16,
-    // fontWeight: 400
-  },
-  locationMap: {
-    // border: '2px solid red',
-    // width: '15em',  
-    // height: '10em',
-    // marginTop: '0.5em',
-    // '& img': {
-    //   width: '100%',
-    //   height: '100%',
-    // }
-  },
-  kmSlider: {
-    // width: '15em', 
-  },
   // startup category section at at the left of the main section
   startupCategorytSection: {
-    border:'2px solid yellow',
     width: '25%'
   },
   typeOfBusiness: {
@@ -177,60 +136,50 @@ export const useStyles = makeStyles((theme) => ({
     color: '#242F65',
     fontWeight: 400
   },
-  checkbox: {
-    // MuiCheckbox: {
-    //     colorSecondary: {
-    //       color: 'white!important'
-    //     },
-    //     checked: {
-    //       color: 'blue!important'
-    //     }
-    //   }
-  },
   // section to display all startups in the right section
   startupRightSection: {
-    border: '2px solid red',
     width: '73%',
   },
   // tabs in startups' section
   tabSection: {
-    border: '2px solid yellow',
     padding: '0.5em',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   startupListSection: {
-    border: '2px solid black',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
+  expandStartups: {
+    margin: '0 auto',
+    marginTop: '3em',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '30px',
+    width: '30px',
+    borderRadius: '50%',
+    background: '#F1F4FD',
+  },
   // startup card container styles
   startupCardContainer: {
-    border: '2px solid blue',
     width: '14em',
     marginBottom: '1em',
     alignSelf: 'center',
-    // margin: '0 0.5em 1em 0',
-    // display: 'flex',
-    // alignItems: 'center',
-    // justifyContent: 'space-between',
     padding: '1em',
-    // height: 130,
     borderRadius: '10px',
     background: 'white',
-    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.08)',
+    boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
   },
   headSection: {
-    border: '2px solid black',
     display: 'flex',
     justifyContent: 'space-between',
   },
   // image section in the card
   imageSection: {
     width: '80%',
-    border:'2px solid yellow',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
@@ -264,9 +213,12 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: '0.5em',
     width: 8,
     height: 8,
+  },
+  savedProfile: {
+    width: 25,
+    height: 25,
   }, 
   descriptionSection: {
-    border:'2px solid yellow',
     textAlign: 'left',
   },
   description: {
@@ -277,51 +229,67 @@ export const useStyles = makeStyles((theme) => ({
     lineHeight: '16px',
     letterSpacing: '0px',
     textAlign: 'left',
+  }, 
+  profilePostSection: {
+    display: 'flex', 
+    justifyContent: 'space-between',    
   },
-  // detail section in the card
-  startupDetailSection: {
-    // color: '#0E0E31',
-    // width: '70%',
-    // padding: '0.5em',
-    // display: 'flex',
-    // flexDirection: 'column',
+  profileInfo: {
+    display: 'flex',
+    alignItems: 'center',
   },
-  titleSection: {
-    // borderBottom: '1px solid #EAEAEA'
+  profileImage: {
+    height: '30px',
+    width: '30px',
   },
-  profileTitle: {
-    // width: '100%',
-    // textAlign: 'left',
-    // fontSize: 20,
-    // fontWeight: 500,
+  profileDetails: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginLeft: '10px',
   },
-  detailsSection: {
-    // paddingTop: '0.8em',
-    // display: 'flex',
+  profTitle: {
+    fontFamily: 'Poppins',
+    fontSize: '10px',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    lineHeight: '15px',
+    letterSpacing: '0px',
+    textAlign: 'left',
   },
-  typeImage: {
-    // width: 11,
-    // height: 12,
-    // color: '#B3B1B7',
-    // marginRight: 3,
+  profDesignation: {
+    fontFamily: 'Poppins',
+    fontSize: '8px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '12px',
+    letterSpacing: '0px',
+    textAlign: 'left',
   },
-  detailType: {
-    // fontSize: 14,
-    // marginRight: 10,
+  totalPosts: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '45px',
+    width: '49px',   
+    borderRadius: '3px',
+    background: '#F1F4FD',
   },
-  // saved profile section in the card
-  savedSection: {
-    // height: 85,
-    // color: '#AFB3B9',
+  totalPost: {
+    fontFamily: 'Poppins',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: '21px',
+    color: '#3936C4',
   },
-  timeStamp: {
-    // fontSize: 14,
-    // fontWeight: 400, 
+  post: {
+    fontFamily: 'Poppins',
+    fontSize: '10px',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: '15px',
+    color: '#3936C4',
   },
-  savedProfile: {
-    // width: 15,
-    // marginTop: "0.4em",
-    // cursor: 'pointer'
-  }
 }));
 
