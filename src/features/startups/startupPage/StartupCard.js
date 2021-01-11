@@ -2,11 +2,11 @@ import React from 'react';
 import {Grid, Typography} from "@material-ui/core";
 import business from "../../../assets/images/business.png";
 import location from "../../../assets/images/location.png";
-import fav from "../../../assets/images/fav.png";
+import profileImage from "../../../assets/images/john.png";
+import savedProfile from "../../../assets/images/savedProfile.png";
 import {useStyles} from "./startupsPage.styles";
-import createTypography from '@material-ui/core/styles/createTypography';
 
-export default function Startup(props) {
+export default function StartupCard(props) {
 
     const classes = useStyles();
 
@@ -36,7 +36,7 @@ export default function Startup(props) {
                     </Typography>
                 </Grid>
                 <Typography>
-                    <img src={fav} alt="saved icon"/>
+                    <img className={classes.savedProfile} src={savedProfile} alt="unsaved icon"/>
                 </Typography>
             </Grid>    
             <Grid className={classes.descriptionSection}>
@@ -44,9 +44,17 @@ export default function Startup(props) {
                     <p>{props.description}</p>
                 </Typography>
             </Grid> 
-            <Grid className={classes.profileSection}>
-                <Typography>
-                    <p>Posts</p>
+            <Grid className={classes.profilePostSection}>
+                <Typography className={classes.profileInfo}>
+                    <img className={classes.profileImage} src={profileImage} alt=""/>
+                    <div className={classes.profileDetails}>
+                        <span className={classes.profTitle}>John Doe</span>
+                        <span className={classes.profDesignation}>Owner</span>
+                    </div>
+                </Typography>
+                <Typography className={classes.totalPosts}>
+                    <div className={classes.totalPost}>10</div>
+                    <div className={classes.post}>Posts</div>
                 </Typography>
             </Grid>    
         </Grid>
