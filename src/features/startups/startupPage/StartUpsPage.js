@@ -7,22 +7,22 @@ import {startupsObj} from "../startup.obj";
 import {useStyles} from "./startupsPage.styles";
 import StartupCard from './StartupCard';
 import StartUpstCategory from './StartUpsCategory';
-// import Specificstartup from './specificstartup/Specificstartup';
+import SpecificStartup from '../specificStartup/SpecificStartup';
 
-export default function StartUpsPage({toggleTostartups}) {
+export default function StartUpsPage({toggleToStartup}) {
 
     const classes = useStyles();
 
-    const [toggleSpecificstartup, setToggleSpecificstartup] = useState(false)
+    const [toggleToSpecificstartup, setToggleToSpecificstartup] = useState(false)
 
-    function toggleTostartups(e){
+    function toggleToStartup(e){
         e.preventDefault()
-        setToggleSpecificstartup(toggleSpecificstartup => !toggleSpecificstartup)
+        setToggleToSpecificstartup(toggleToSpecificstartup => !toggleToSpecificstartup)
     }
     
     return (
         <>
-        {/* {/* {toggleSpecificstartup ? <Specificstartup/> : */}
+        { toggleToSpecificstartup ? <SpecificStartup/> : 
         <Grid className={classes.startupMainSection}>
             <Grid className={classes.inviteSection}>
                 <span className={classes.inviteDescription}> 
@@ -87,7 +87,7 @@ export default function StartUpsPage({toggleTostartups}) {
                         {startupsObj.map((startup, index) => {
                             return(
                                 <StartupCard
-                                    toggleTostartups = {toggleTostartups}
+                                    toggleToStartup = {toggleToStartup}
                                     key = {index}
                                     startupImage = {startup.startupImage}
                                     profileTitle = {startup.profileTitle}
@@ -109,7 +109,7 @@ export default function StartUpsPage({toggleTostartups}) {
                 </Grid>
             </Grid>
         </Grid>
-        {/* } */} 
+        } 
         </>
     )
 }
