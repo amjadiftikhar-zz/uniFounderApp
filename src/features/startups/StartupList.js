@@ -31,7 +31,8 @@ function StartupList() {
             {
                 startupsObj.map(s => {
                     return(
-                        <Startup startupTitle={s.startupTitle}
+                        <Startup 
+                            startupTitle={s.startupTitle}
                             startupImage={s.startupImage}
                             location={s.location}
                             businessType={s.businessType}
