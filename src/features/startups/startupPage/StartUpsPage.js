@@ -102,6 +102,9 @@ export default function StartUpsPage({toggleTostartups}) {
                                 />
                             )
                         })}
+                    </Grid>                    
+                    <Grid className={classes.expandStartups}>
+                        <ExpandMoreIcon/>
                     </Grid>
                 </Grid>
             </Grid>
