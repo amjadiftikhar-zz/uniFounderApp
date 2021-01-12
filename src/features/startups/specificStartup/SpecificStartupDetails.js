@@ -20,7 +20,7 @@ function SpecificStartupDetails() {
     const classes = useStyles();
 
     return (
-        <Grid className={classes.specificStartupMainSection}>
+        <Grid className={classes.specificStartupCardSection}>
             <Grid className={classes.startupBannerSection}>
                 <img className={classes.startupBanner} 
                     src={startupBanner} alt="startup image"
@@ -119,7 +119,7 @@ function SpecificStartupDetails() {
             <Grid className={classes.specificStartupDescription}>
                 <Typography className={classes.startupDescription}>
                     <h4 className={classes.sectionTitle}>
-                        Key Responsibilities
+                        About Adobe
                     </h4>
                     <ul>
                         <li>Creating Banners</li>
@@ -132,7 +132,7 @@ function SpecificStartupDetails() {
             <Grid className={classes.specificStartupDescription}>
                 <Typography className={classes.startupDescription}>
                     <h4 className={classes.sectionTitle}>
-                        Requirements
+                        Video Pitch
                     </h4>
                     <ul>                        
                         <li>Creating Banners</li>
